@@ -61,6 +61,13 @@ cp /etc/ncs/ncs.conf /nso/etc
 
 
 ## NED のインストールとデバイス登録
+### NED の展開
+work ディレクトリ内に移動後下記を実行
+
+```
+bash ../ncs-6.5-cisco-iosxr-7.69-freetrial.signed.bin
+```
+
 ### NED ファイルをコピー
 ```
 docker cp ncs-6.5-cisco-iosxr-7.69.tar.gz nso:/nso/run/packages
