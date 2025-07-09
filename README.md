@@ -96,9 +96,25 @@ top
 devices device xr-2 address 172.30.0.3 device-type cli protocol ssh ned-id cisco-iosxr-cli-7.69
 authgroup XR
 state admin-state unlocked
+
 ```
 
-その後 CTRL-D を入力し commit を実行
+その後 CTRL-D を入力し commit を実行。下記実行例。
+
+```
+admin@ncs# config terminal
+Entering configuration mode terminal
+admin@ncs(config)# load merge terminal
+Loading.
+（上記コピペしして CTRL-D を入力）
+
+0 bytes parsed in 14.75 sec (0 bytes/sec)
+admin@ncs(config)# commit
+Commit complete.
+admin@ncs(config)# end
+admin@ncs#
+```
+
 
 
 
