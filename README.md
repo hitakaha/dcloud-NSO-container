@@ -159,6 +159,20 @@ vi /nso/etc/ncs.conf
     334         <ip>0.0.0.0</ip>
 ```
 
+### 停止、削除
+```
+docker stop nso
+```
+
+```
+docker stop nso
+```
+
+### ポート 8080 を追加して起動
+```
+docker run -itd --name nso -e ADMIN_PASSWORD=admin --mount type=bind,source=/home/nso/nso-root,target=/nso --mount type=bind,source=/home/nso/nso-log,target=/log -p 8080:8080 cisco-nso-prod:6.5
+```
+
 
 
 
