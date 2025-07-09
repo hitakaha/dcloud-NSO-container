@@ -173,6 +173,14 @@ docker stop nso
 docker run -itd --name nso -e ADMIN_PASSWORD=admin --mount type=bind,source=/home/nso/nso-root,target=/nso --mount type=bind,source=/home/nso/nso-log,target=/log -p 8080:8080 cisco-nso-prod:6.5
 ```
 
+```
+docker network connect simple-bgp_mgmt nso
+```
+
+```
+docker exec -it nso ncs_cli -C -u admin
+```
+
 
 
 
