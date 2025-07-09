@@ -24,6 +24,7 @@ docker run -itd --name nso -e ADMIN_PASSWORD=admin --mount type=bind,source=/hom
 docker cp ncs-6.5-cisco-iosxr-7.69.tar.gz nso:/nso/run/packages
 
 ### デバイス登録
+```
 admin@ncs# config t
 Entering configuration mode terminal
 admin@ncs(config)# devices authgroups group XR umap admin remote-name admin remote-password cisco123 remote-secondary-password cisco123
@@ -39,5 +40,6 @@ admin@ncs(config-device-xr-2)# commit
 Commit complete.
 admin@ncs(config-device-xr-2)# end
 admin@ncs#
+```
 
 
