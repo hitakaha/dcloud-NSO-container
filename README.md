@@ -189,7 +189,17 @@ curl -u admin:admin http://198.18.133.101:8080/restconf
 ### WebUI へのアクセス
 http://198.18.133.101:8080/
 - Uername = admin
-- Password = admiin
+- Password = admin
+
+## 余裕のある方向けシナリオ
+```
+git clone https://github.com/hitakaha/dcloud-bgpmgr.git
+```
+
+```
+docker cp dcloud-bgpmgr/ nso:/nso/run/packages
+```
+
 
 
 
