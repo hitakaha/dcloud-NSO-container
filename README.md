@@ -2,6 +2,13 @@
 NSO コンテナハンズオンのステップをまとめます
 
 ## イメージの読み込みと起動
+### 商用コンテナイメージの展開
+work フォルダを作成し、その中で実行。
+```
+bash ../nso-6.5-freetrial.container-image-prod.linux.x86_64.signed.bin
+```
+
+
 ### 商用コンテナイメージの読み込み
 ```
 docker load -i nso-6.5.container-image-prod.linux.x86_64.tar.gz
