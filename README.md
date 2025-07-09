@@ -84,22 +84,21 @@ packages reload
 ```
 
 ### デバイス登録
+NSO で config terminal 実行後、load merge terminal と入力し下記をコピペ
+
 ```
-admin@ncs# config t
-Entering configuration mode terminal
-admin@ncs(config)# devices authgroups group XR umap admin remote-name admin remote-password cisco123 remote-secondary-password cisco123
-admin@ncs(config-umap-admin)# top
-admin@ncs(config)# devices device xr-1 address 172.30.0.2 device-type cli protocol ssh ned-id cisco-iosxr-cli-7.69
-admin@ncs(config-device-xr-1)# authgroup XR
-admin@ncs(config-device-xr-1)# state admin-state unlocked
-admin@ncs(config-device-xr-1)# top
-admin@ncs(config)# devices device xr-2 address 172.30.0.3 device-type cli protocol ssh ned-id cisco-iosxr-cli-7.69
-admin@ncs(config-device-xr-2)# authgroup XR
-admin@ncs(config-device-xr-2)# state admin-state unlocked
-admin@ncs(config-device-xr-2)# commit
-Commit complete.
-admin@ncs(config-device-xr-2)# end
-admin@ncs#
+devices authgroups group XR umap admin remote-name admin remote-password cisco123 remote-secondary-password cisco123
+top
+devices device xr-1 address 172.30.0.2 device-type cli protocol ssh ned-id cisco-iosxr-cli-7.69
+authgroup XR
+state admin-state unlocked
+top
+devices device xr-2 address 172.30.0.3 device-type cli protocol ssh ned-id cisco-iosxr-cli-7.69
+authgroup XR
+state admin-state unlocked
 ```
+
+その後 CTRL-D を入力し commit を実行
+
 
 
