@@ -145,6 +145,19 @@ docker exec -it nso bash
 vi /nso/etc/ncs.conf
 ```
 
+```
+    282     <local-authentication>
+    283       <enabled>true</enabled>
+    284     </local-authentication>
+...
+    328   <webui>
+    329     <enabled>true</enabled>
+    330     <server-alias>198.18.133.101</server-alias>
+    331     <transport>
+    332       <tcp>
+    333         <enabled>true</enabled>
+    334         <ip>0.0.0.0</ip>
+```
 
 
 
