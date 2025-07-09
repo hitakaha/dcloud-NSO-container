@@ -73,6 +73,16 @@ bash ../ncs-6.5-cisco-iosxr-7.69-freetrial.signed.bin
 docker cp ncs-6.5-cisco-iosxr-7.69.tar.gz nso:/nso/run/packages
 ```
 
+### NED の読み込み
+
+```
+docker exec -it nso ncs_cli -C -u admin
+```
+
+```
+packages reload
+```
+
 ### デバイス登録
 ```
 admin@ncs# config t
