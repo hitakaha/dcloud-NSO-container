@@ -115,6 +115,12 @@ admin@ncs(config)# end
 admin@ncs#
 ```
 
+### XRd ネットワークとの接続
+
+```
+docker network connect simple-bgp_mgmt nso
+```
+
 
 
 
