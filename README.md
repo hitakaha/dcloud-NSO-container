@@ -134,6 +134,18 @@ devices fetch-ssh-host-keys
 devices sync-from
 ```
 
+## RESTCONF, WebUI の有効化
+### ncs.conf の書き換え
+
+```
+docker exec -it nso bash
+```
+
+```
+vi /nso/etc/ncs.conf
+```
+
+
 
 
 
