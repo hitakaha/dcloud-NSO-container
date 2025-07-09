@@ -141,7 +141,7 @@ devices sync-from
 docker exec -it nso bash
 ```
 ```
-chmod 655 /nso/etc/ncs.conf
+chmod 644 /nso/etc/ncs.conf
 ```
 
 
