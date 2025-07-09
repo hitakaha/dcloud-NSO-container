@@ -3,7 +3,7 @@ NSO コンテナハンズオンのステップをまとめます
 
 ## イメージの読み込みと起動
 ### 商用コンテナイメージの展開
-work フォルダを作成し、その中で実行。
+work フォルダを作成し、その中で実行
 ```
 bash ../nso-6.5-freetrial.container-image-prod.linux.x86_64.signed.bin
 ```
@@ -27,6 +27,15 @@ docker run -itd --name nso -e ADMIN_PASSWORD=admin cisco-nso-prod:6.5
 ### コンテナイメージへのアクセス（終了は exit）
 ```
 docker exec -it nso ncs_cli -C -u admin
+```
+
+### コンテナの停止と削除
+```
+docker stop nso
+```
+
+```
+docker rm nso
 ```
 
 
