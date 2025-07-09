@@ -181,6 +181,16 @@ docker network connect simple-bgp_mgmt nso
 docker exec -it nso ncs_cli -C -u admin
 ```
 
+### RESTCONF の確認
+```
+curl -u admin:admin http://198.18.133.101:8080/restconf
+```
+
+### WebUI へのアクセス
+http://198.18.133.101:8080/
+- Uername = admin
+- Password = admiin
+
 
 
 
