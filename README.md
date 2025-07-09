@@ -50,6 +50,16 @@ docker rm nso
 docker run -itd --name nso -e ADMIN_PASSWORD=admin --mount type=bind,source=/home/nso/nso-root,target=/nso --mount type=bind,source=/home/nso/nso-log,target=/log cisco-nso-prod:6.5
 ```
 
+### ncs.conf の永続化
+```
+docker exec -it nso bash
+```
+
+```
+cp /etc/ncs/ncs.conf /nso/etc
+```
+
+
 ## NED のインストールとデバイス登録
 ### NED ファイルをコピー
 ```
