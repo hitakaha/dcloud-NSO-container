@@ -116,10 +116,24 @@ admin@ncs#
 ```
 
 ### XRd ネットワークとの接続
-
+一度 Linux に戻りネットワークを接続します
 ```
 docker network connect simple-bgp_mgmt nso
 ```
+
+### デバイスの sync-from
+```
+docker exec -it nso ncs_cli -C -u admin
+```
+
+```
+devices fetch-ssh-host-keys
+```
+
+```
+devices sync-from
+```
+
 
 
 
