@@ -24,9 +24,14 @@ docker image ls
 docker run -itd --name nso -e ADMIN_PASSWORD=admin cisco-nso-prod:6.5
 ```
 
-### コンテナイメージへのアクセス（終了は exit）
+### コンテナ NSO CLI へのアクセス（終了は exit）
 ```
 docker exec -it nso ncs_cli -C -u admin
+```
+
+### コンテナへの bash アクセス（終了は exit）
+```
+docker exec -it nso bash
 ```
 
 ### コンテナの停止と削除
