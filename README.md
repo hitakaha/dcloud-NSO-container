@@ -169,7 +169,7 @@ docker stop nso
 ```
 
 ```
-docker stop nso
+docker rm nso
 ```
 
 ### ポート 8080 を追加して起動
